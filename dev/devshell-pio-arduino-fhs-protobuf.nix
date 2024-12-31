@@ -1,7 +1,7 @@
 {pkgs ? import <nixpkgs> {}, ...}: let
   envname = "pio-arduino-fhs";
   # as a function to make sure the same pkgs is used as in targetPkgs
-  mypython = pks: pks.python3.withPackages (ps: with ps; [platformio pylibftdi pyusb protobuf]);
+  mypython = pks: pks.python3.withPackages (ps: with ps; [platformio pylibftdi pyusb protobuf setuptools]);
   # "proxy" env, is this useful/necessary???
   # myEnv = pkgs.buildEnv {
   #   name = envname;
