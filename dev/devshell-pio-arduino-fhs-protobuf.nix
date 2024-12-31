@@ -18,6 +18,7 @@ in
       libftdi1
       libusb1
       platformio-core
+      python312Packages.setuptools
       (mypython pkgs)
       zsh
     ]);
